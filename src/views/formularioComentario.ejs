@@ -1,0 +1,17 @@
+<!-- formularioComentario.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Comentario</title>
+</head>
+<body>
+  <h2>Formulario de Comentario</h2>
+  <form action="/foro/<%= temaId %>/comentarios" method="post">
+    <textarea name="contenido" rows="4" cols="50" placeholder="Escribe tu comentario"></textarea>
+    <br>
+    <button type="submit">Publicar Comentario</button>
+  </form>
+</body>
+</html>
